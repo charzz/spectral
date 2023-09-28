@@ -53,6 +53,16 @@ var constants = {
         'description': 'Canopy background adjustment',
         'short_name': 'L'
     },
+    'L_EVI': {
+        'default': 1.0,
+        'description': 'Canopy background adjustment for EVI',
+        'short_name': 'L_EVI'
+    },
+    'L_SAVI': {
+        'default': 1.0,
+        'description': 'Canopy background adjustment for SAVI',
+        'short_name': 'L_SAVI'
+    },
     'PAR': {
         'default': None,
         'description': 'Photosynthetically Active Radiation',
