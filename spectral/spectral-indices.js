@@ -523,6 +523,17 @@ var spectralIndices = {
             'reference': 'https://doi.org/10.1016/j.jag.2022.102703',
             'short_name': 'EMBI'
         },
+        'ENDVI': {
+            'application_domain': 'vegetation',
+            'bands': ['N', 'G', 'B'],
+            'contributor': 'https://github.com/gagev',
+            'date_of_addition': '2024-04-08',
+            'formula': '((N + G) - (2 * B)) / ((N + G) + (2 * B))',
+            'long_name': 'Enhanced Normalized Difference Vegetation Index',
+            'platforms': ['Sentinel-2', 'Landsat-OLI', 'Landsat-TM', 'Landsat-ETM+', 'MODIS', 'Planet-Fusion'],
+            'reference': 'https://doi.org/10.1371/journal.pone.0186193',
+            'short_name': 'ENDVI'
+        },
         'EVI': {
             'application_domain': 'vegetation',
             'bands': ['g', 'N', 'R', 'C1', 'C2', 'B', 'L_EVI'],
@@ -1078,7 +1089,7 @@ var spectralIndices = {
             'bands': ['S2', 'S1', 'G'],
             'contributor': 'https://github.com/davemlz',
             'date_of_addition': '2022-09-22',
-            'formula': '((S2 - S1)/G)/((S2 + S1)/G)',
+            'formula': '(S2 - S1/G)/(S2 + S1/G)',
             'long_name': 'Normalized Built-up Area Index',
             'platforms': ['Sentinel-2', 'Landsat-OLI', 'Landsat-TM', 'Landsat-ETM+', 'MODIS'],
             'reference': 'https://www.omicsonline.org/scientific-reports/JGRS-SR136.pdf',
@@ -1478,7 +1489,7 @@ var spectralIndices = {
             'long_name': 'Normalized Difference Soil Index',
             'platforms': ['Sentinel-2', 'Landsat-OLI', 'Landsat-TM', 'Landsat-ETM+', 'MODIS'],
             'reference': 'https://doi.org/10.1016/j.jag.2015.02.010',
-            'short_name': 'NDSoiI'
+            'short_name': 'NDSoI'
         },
         'NDTI': {
             'application_domain': 'water',
